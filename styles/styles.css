@@ -12,37 +12,42 @@ header {
   padding: 10px;
 }
 
+/* nav rule → ONLY background-color + padding */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  background-color: steelblue;
+  padding: 10px;
 }
 
+/* nav a rule → ONLY color, padding, display:block */
 nav a {
   color: white;
-  text-decoration: none;
-  font-weight: bold;
+  padding: 5px;
+  display: block;
 }
 
-nav a:hover {
-  text-decoration: underline;
+/* h1 rule → ONLY color */
+h1 {
+  color: steelblue;
 }
 
-/* ====== Main ====== */
+/* img rule → ONLY width, height, border, padding, box-shadow */
+img {
+  width: 150px;
+  height: auto;
+  border: 2px solid #333;
+  padding: 5px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+
+/* main rule → max-width required */
 main {
-  max-width: 800px; /* limit width */
+  max-width: 800px;
   margin: 20px auto;
   padding: 10px;
   text-align: center;
 }
 
-main img {
-  width: 150px;
-  height: auto; /* keep aspect ratio */
-  border-radius: 8px;
-}
-
-/* ====== Aside ====== */
+/* aside rule */
 aside {
   width: 80%;
   margin: 20px auto;
@@ -54,17 +59,23 @@ aside {
   border-radius: 10px;
 }
 
+/* aside img rule → width:200px + height:auto */
 aside img {
-  width: 200px; /* required size */
-  height: auto; /* keep aspect ratio */
+  width: 200px;
+  height: auto;
   margin-bottom: 10px;
 }
 
-/* ====== Footer ====== */
+/* p rule → padding:0 */
+p {
+  padding: 0;
+}
+
+/* footer rule → margin-top, border-top, text-align:center */
 footer {
-  margin-top: 20px; /* add spacing */
-  border-top: 2px solid #333; /* top border */
-  text-align: center; /* center text */
+  margin-top: 20px;
+  border-top: 2px solid #333;
+  text-align: center;
   padding: 10px;
   background-color: #eee;
 }
