@@ -164,6 +164,11 @@ footer .socialmedia {
   gap: 12px;
 }
 
+/* ✅ CORRECCIÓN: quitar subrayado en enlaces de redes sociales */
+footer .socialmedia a {
+  text-decoration: none;
+}
+
 footer .socialmedia img {
   width: 28px;
   height: 28px;
